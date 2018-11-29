@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/zhuce.css" />
+	</head>
+
+	<body>
+		<div id="top_wrap">
+			<div class="top content">
+				<div class="logo">
+					<h1>
+                		<a href="index.html">名鞋库</a>
+                	</h1>
+					<strong>专业精选&nbsp;足够喜欢</strong>
+				</div>
+			</div>
+		</div>
+		<div style="margin:0 auto;width:780px;line-height:30px;text-align:right;padding-right:10px" id="fanhui">
+			<a href="index.html">返回首页</a>
+		</div>
+		<form action="" method="post" id="signup" class="signup">
+			<div class="RegisterWrap" style="margin:0 auto;width:780px;">
+				<div class="form" style="padding:0;border:1px solid #efefef;border-radius:2px;box-shadow:0 0 8px #E5E5E5">
+					<div style="font-size:16px;font-family:microsoft yahei;color:#888;background:#f8f8f8;padding:4px 10px;border-bottom:1px solid #efefef;text-shadow:1px 1px #fff;font-weight:700;">
+						名鞋库用户注册
+					</div>
+					<table border="0" cellspacing="0" cellpadding="0" style="background:url(images/signup.jpg) no-repeat center bottom;">
+						<tbody>
+							<tr>
+								<td width="65%">
+									<div style="padding:40px 0 80px 80px">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<th></th>
+													<td style="height:35px;line-height:25px">
+														<span class="valierror" id="valierror" style="margin:0;display:none;">	
+											</span>
+													</td>
+												</tr>
+												<tr>
+													<th>用户名: </th>
+													<td>
+														<input autocomplete="off" class="x-input newinputstyle" name="uname" id="reg_user" maxlength="50" value="邮箱/手机" onfocus="rmDefault(this)" onblur="nameCheck(this);ga('send','event','会员','注册过程','用户名');" style="width:220px;border:1px solid #ccc;padding:3px 5px;color:#aaa" type="text">
+														<span></span>
+													</td>
+												</tr>
+												<tr>
+													<th style="padding-top:15px">密码：</th>
+													<td style="padding-top:15px">
+														<input autocomplete="off" class="x-input newinputstyle" name="passwd" type="password" id="reg_passwd" onblur="verifyPasswd('reg_passwd');ga('send','event','会员','注册过程','密码');" style="width:220px;border:1px solid #ccc;padding:3px 5px">
+													</td>
+													<span id="passwd_err_msg"></span>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</form>
+		<div id="footer_wrap">
+			<div class="footer content">
+				<a href="#">关于我们 |</a>
+				<a href="#">关于我们 |</a>
+				<a href="#">关于我们 |</a>
+				<a href="#">关于我们 |</a>
+				<a href="#">关于我们</a>
+				<p>Copyright © 2004 - 2018 名鞋库 版权所有</p>
+				<p>违法和不良信息举报电话：4006561155</p>
+			</div>
+		</div>
+	</body>
+
+</html>
