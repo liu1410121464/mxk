@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>用户注册</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/common.css" />
-		<link rel="stylesheet" type="text/css" href="css/zhuce.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/zhuce.css" />
 	</head>
 
 	<body>
@@ -20,55 +20,125 @@
 				</div>
 			</div>
 		</div>
-		<div style="margin:0 auto;width:780px;line-height:30px;text-align:right;padding-right:10px" id="fanhui">
-			<a href="index.html">返回首页</a>
-		</div>
-		<form action="" method="post" id="signup" class="signup">
-			<div class="RegisterWrap" style="margin:0 auto;width:780px;">
-				<div class="form" style="padding:0;border:1px solid #efefef;border-radius:2px;box-shadow:0 0 8px #E5E5E5">
-					<div style="font-size:16px;font-family:microsoft yahei;color:#888;background:#f8f8f8;padding:4px 10px;border-bottom:1px solid #efefef;text-shadow:1px 1px #fff;font-weight:700;">
-						名鞋库用户注册
-					</div>
-					<table border="0" cellspacing="0" cellpadding="0" style="background:url(images/signup.jpg) no-repeat center bottom;">
-						<tbody>
-							<tr>
-								<td width="65%">
-									<div style="padding:40px 0 80px 80px">
-										<table width="100%" border="0" cellspacing="0" cellpadding="0">
-											<tbody>
-												<tr>
-													<th></th>
-													<td style="height:35px;line-height:25px">
-														<span class="valierror" id="valierror" style="margin:0;display:none;">	
-											</span>
-													</td>
-												</tr>
-												<tr>
-													<th>用户名: </th>
-													<td>
-														<input autocomplete="off" class="x-input newinputstyle" name="uname" id="reg_user" maxlength="50" value="邮箱/手机" onfocus="rmDefault(this)" onblur="nameCheck(this);ga('send','event','会员','注册过程','用户名');" style="width:220px;border:1px solid #ccc;padding:3px 5px;color:#aaa" type="text">
-														<span></span>
-													</td>
-												</tr>
-												<tr>
-													<th style="padding-top:15px">密码：</th>
-													<td style="padding-top:15px">
-														<input autocomplete="off" class="x-input newinputstyle" name="passwd" type="password" id="reg_passwd" onblur="verifyPasswd('reg_passwd');ga('send','event','会员','注册过程','密码');" style="width:220px;border:1px solid #ccc;padding:3px 5px">
-													</td>
-													<span id="passwd_err_msg"></span>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+		<div class="AllWrapInside">
+			<div class="PassportWrap">
+				<div style="margin:0 auto;width:780px;line-height:30px;text-align:right;padding-right:10px" id="fanhui">
+					<a href="index.html">返回首页</a>
 				</div>
+				<form action="" method="post" id="signup" class="signup">
+					<div class="RegisterWrap" style="margin:0 auto;width:780px;">
+						<div class="form" style="padding:0;border:1px solid #efefef;border-radius:2px;box-shadow:0 0 8px #E5E5E5">
+							<div style="font-size:16px;font-family:microsoft yahei;color:#888;background:#f8f8f8;padding:4px 10px;border-bottom:1px solid #efefef;text-shadow:1px 1px #fff;font-weight:700;">
+								名鞋库用户注册
+							</div>
+							<table border="0" cellspacing="0" cellpadding="0" style="background:url(images/signup.jpg) no-repeat center bottom;width:780px;">
+								<tbody>
+									<tr>
+										<td width="65%">
+											<div style="padding:40px 0 80px 80px">
+												<table width="100%" border="0" cellspacing="0" cellpadding="0">
+													<tbody>
+														<tr>
+															<th></th>
+															<td style="height:35px;line-height:25px">
+																<span class="valierror" id="valierror" style="margin:0;display:none;"></span>
+															</td>
+														</tr>
+														<tr>
+															<th>用户名: </th>
+															<td>
+																<input autocomplete="off" class="x-input newinputstyle" name="uname" id="reg_user" maxlength="50" placeholder="邮箱/手机" onfocus="rmDefault(this)" onblur="nameCheck(this);ga('send','event','会员','注册过程','用户名');" style="width:220px;border:1px solid #ccc;padding:3px 5px;color:#aaa" type="text">
+																<span></span>
+															</td>
+														</tr>
+														<tr>
+															<th style="padding-top:15px">密码：</th>
+															<td style="padding-top:15px">
+																<input autocomplete="off" class="x-input newinputstyle" name="passwd" type="password" id="reg_passwd" onblur="verifyPasswd('reg_passwd');ga('send','event','会员','注册过程','密码');" style="width:220px;border:1px solid #ccc;padding:3px 5px">
+															</td>
+															<span id="passwd_err_msg"></span>
+														</tr>
+														<tr>
+															<th style="padding-top:15px">确认密码：</th>
+															<td style="padding-top:15px">
+																<input autocomplete="off" class="x-input newinputstyle" name="passwd_r" type="password" id="reg_passwd_r" onfocus="hiddenError('valierror');" onblur="verifyPasswdr('reg_passwd', 'reg_passwd_r');ga('send','event','会员','注册过程','确认密码');" style="width:220px;border:1px solid #ccc;padding:3px 5px">
+																<span id="passwd_r_err_msg"></span>
+															</td>
+														</tr>
+														<tr>
+															<th style="padding-top:15px">验证码：</th>
+															<td style="padding-top:15px">
+																<input autocomplete="off" class="x-input " style="width:65px" size="8" type="text" required="true" name="signupverifycode" onblur="ga('send','event','会员','注册过程','验证码');" id="iptsingup" vtype="digits">
+																<span class="verifyCode">
+															<img src="//www.s.cn/passport-s-verifyCode.html?1543490258759" border="1" codesrc="//www.s.cn/passport-s-verifyCode.html">
+															<a href="javascript:void(0)" style="color:#666">换个图片</a>
+														</span>
+															</td>
+														</tr>
+														<tr>
+															<th></th>
+															<td class="c777" style="padding-top:25px">
+																<label for="license" class="nof" style="width:auto; text-align:left; font-weight:normal;"> 
+															<input type="checkbox" id="license" name="license" value="agree" checked="checked"> 
+																我已阅读并同意 
+																<a href="//www.s.cn/page-license.html" id="terms_error" class="lnk" target="_blank"> 
+																	<span class="FormText" id="terms_error_sym">
+																		<font color="#3366dd">名鞋库会员注册协议</font>
+																	</span>
+																</a>。
+														</label>
+															</td>
+														</tr>
+														<tr>
+															<th></th>
+															<td style="padding-top:10px">
+																<input class="actbtn cart-btn-next06" style="display:inline-block;width:91px;height:32px;line-height:30px;text-align:center;color:#e66;font-size:14px;font-weight:700;margin-top:10px;background:url(static/images/loginbg.png); no-repeat;" onclick="ga('send','event','会员','注册过程','注册 ');return verfiySignupForm();" type="submit" value="注册新用户" id="fast_reg_reg">
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</td>
+										<td width="35%" style="text-align:center;">
+											<div style="border-left:1px dashed #ccc;height:300px">
+												<br><br><br><br> <b>已经有名鞋库账号？</b>
+												<div class="box10"></div>
+												<a href="/passport-login.htm" class="returnlogin" id="fast_reg_login" style="display:inline-block;width:91px;height:32px;line-height:30px;text-align:center;color:#c66;font-size:14px;font-weight:700;margin-top:10px;background:url(static/images/loginbg.png); no-repeat;">现在登录</a>
+												<div style="padding:40px 0 0 0; text-align:center">
+													<img src="//images.s.cn/images/css/singupmy.png">
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</form>
 			</div>
-		</form>
-		<div id="footer_wrap">
-			<div class="footer content">
+		</div>
+		<script>
+			var checkInput = {
+            uname(str) {
+                var reg = /^\w{6,14}$/;
+                return reg.test(str);
+            },
+            passwd(str) {
+                var reg = /^\w{6,11}$/;
+                return reg.test(str);
+            },
+            phone(str) {
+                var reg = /^1[35789]\d{9}$/;
+                return reg.test(str);
+            },
+            age(str) {
+                var reg = /^\d{1,3}$/;
+                return reg.test(str);
+            }
+        }
+		</script>
+		<div id="footer_wrap" style="background: #fff;">
+			<div class="footer content" style="margin-top: 30px;background: #fff;">
 				<a href="#">关于我们 |</a>
 				<a href="#">关于我们 |</a>
 				<a href="#">关于我们 |</a>
