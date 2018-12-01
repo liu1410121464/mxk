@@ -67,7 +67,7 @@
 															</td>
 														</tr>
 														<tr>
-															<th style="padding-top:30px">验证码：</th>
+															<th style="padding-top:15px">验证码：</th>
 															<td>
 																<input autocomplete="off " class="x-input " style="width:65px " size="8 " type="text " required="true " name="imgcode" id="iptsingup " vtype="digits ">
 																<!--<span class="verifyCode ">
@@ -78,7 +78,7 @@
 														</tr>
 														<tr>
 															<th></th>
-															<td class="c777 " style="padding-top:25px ">
+															<td class="c777 " style="padding-top:10px ">
 																<label for="license " class="nof " style="width:auto; text-align:left; font-weight:normal; "> 
 																<input type="checkbox" id="license " name="license " value="agree " checked="checked "> 
 																我已阅读并同意 
@@ -93,7 +93,7 @@
 														<tr>
 															<th></th>
 															<td style="padding-top:10px ">
-																<input class="actbtn cart-btn-next06 " style="display:inline-block;width:91px;height:32px;line-height:30px;text-align:center;color:#e66;font-size:14px;font-weight:700;margin-top:10px;background:url(static/images/loginbg.png); no-repeat; " onclick="ga( 'send', 'event', '会员', '注册过程', '注册 ');return verfiySignupForm(); " type="submit " value="注册新用户 " id="fast_reg_reg ">
+																<input class="actbtn cart-btn-next06 " type="submit" value="注册新用户 " id="fast_reg_reg " style="display:inline-block;width:91px;height:32px;line-height:30px;text-align:center;color:#e66;font-size:14px;font-weight:700;margin-top:10px;background:url(static/images/loginbg.png); no-repeat;" >
 															</td>
 														</tr>
 													</tbody>
@@ -120,11 +120,11 @@
 		</div>
 		<script>
 			var checkInput = {
-				uname(str) {
+				username(str) {
 					var reg = /^\w{6,14}$/;
 					return reg.test(str);
 				},
-				passwd(str) {
+				password(str) {
 					var reg = /^\w{6,11}$/;
 					return reg.test(str);
 				},
