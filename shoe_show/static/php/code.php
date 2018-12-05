@@ -7,14 +7,11 @@
 	$black = imagecolorallocate($im, 0, 0, 0); 
 	
 	$number_array = range(0,9);
-	$abc = range('a','z');
-	$big_abc = range('A','Z');
-	$big_char = array_merge($number_array,$abc,$big_abc);
 	
 	$font = 'simsun.ttc';
 	$myimagecode = '';
 	for($i=0;$i<4;$i++){
-		$str = $big_char[rand(0,61)];
+		$str = $number_array[rand(0,9)];
 		$myimagecode = $myimagecode.$str;
 		$a = 50*$i;
 		$b = 50*($i+1);

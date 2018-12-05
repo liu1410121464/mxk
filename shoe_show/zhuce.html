@@ -44,7 +44,7 @@
 														<tr>
 															<th>用户名: </th>
 															<td>
-																<input type="text" class="form-control" id="username" name="username" placeholder="邮箱/手机" maxlength="50px" data-error="需要输入6-13位的字母或者下划线" style="width:220px;padding:3px 5px;color:#aaa;">
+																<input type="text" class="form-control" id="username" name="username" placeholder="用户名" maxlength="50px" data-error="需要输入6-13位的字母或者下划线" style="width:220px;padding:3px 5px;color:#aaa;">
 																<p class="" style="width:220px"></p>
 															</td>
 														</tr>
@@ -121,7 +121,7 @@
 					},
 					event() {
 						var _this = this;
-						for(let i = 0; i < this.$inputAll.length; i++) {
+						for(let i = 0; i < this.$inputAll.length-1; i++) {
 							this.$inputAll[i].onblur = function() {
 								var $p = this.nextElementSibling;
 								if(this.value == '') {
@@ -180,13 +180,13 @@
 
 						this.$el['submit'].onclick = function() {
 							var $pAll = _this.$el.querySelectorAll('p');
-							for(let i = 0; i < $pAll.length; i++) {
+							for(let i = 0; i < $pAll.length-1; i++) {
 								if($pAll[i].className.indexOf('text-danger') == -1) {
 									$pAll[i].previousElementSibling.focus();
 									return;
 								}
 							}
-							alert('注册成功');
+							alert('注册失败');
 						}
 					}
 				}
