@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/denglu.css" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="top_wrap">
+        <div class="top content">
+            <div class="logo">
+                <h1>
+                    <a href="index.html">名鞋库</a>
+                </h1>
+                <strong>专业精选&nbsp;足够喜欢</strong>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/Ajax.js"></script>
+    <script src="static/js/jquery.js"></script>
+    <div class="AllWrapInside">
+        <form method="POST" onsubmit="" action="static/php/denglu.php" class="loginform" id="loginform">
+            <div class="RegisterWrap content" style="margin:0 auto">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td align="center" width="40%"><a href="index.html" target="_blank">
+                                    <img src="static/images/denglu_page.jpg"></a>
+                            </td>
+                            <td width="60%" style="vertical-align:top;">
+                                <div style="margin:100px auto;width:480px;">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div style="height:35px"><img src="static/images/loginpic21.png"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div style="width:85%;background:#fafafa;border:1px solid #eee;box-shadow:3px 3px #F5F5F5">
+                                                        <table width="80%" border="0" cellspacing="0" cellpadding="0"
+                                                            style="margin:20px auto">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>用户名：</th>
+                                                                    <td><input class="form-control" id="username" name="username"
+                                                                            tabindex="1" value="" style="width: 220px; color: rgb(0, 0, 0); border: 1px solid rgb(204, 204, 204); padding: 3px 5px;"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th style="padding-top:15px">密　码：</th>
+                                                                    <td style="padding-top:15px"><input autocomplete="off"
+                                                                            class="form-control" id="password" name="password"
+                                                                            type="password" style="width:220px;border:1px solid #ccc;padding:3px 5px"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th style="padding-top:15px">验证码：</th>
+                                                                    <td style="padding-top:15px"><input type="text"
+                                                                            name="ver_code" id="ver_code" maxLength="4"
+                                                                            style="width:65px" />
+                                                                        <img id="code_img" 　border="1" src="static/php/code.php echo rand();?>"
+                                                                            width="80" height="35" />
+                                                                        <a href="javascript:void(0)" onclick="document.getElementById('code_img').src='static/php/code.php?r='+Math.random()"><span>看不清？换一个！</span></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <td style="padding-top:20px"><button name="submit"
+                                                                            type="submit" style="width:91px;height:32px;text-align:center;color:#e66;font-size:14px;font-weight:700;background:url(static/images/loginbg.png); no-repeat;">登录</button>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <td style="color:#999;padding:35px 0 25px 35px;font-size:12px">还不是名鞋库会员？　<a
+                                                                            href="zhuce.html" onclick="location.href='zhuce.html'"
+                                                                            class="lnk cf60" id="fast_login_reg" style="font-size:14px;color:#e66">马上注册为会员</a></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="login_content">
+                                                        <div style="width:85%;margin-top:20px ">
+                                                            <div class="login-descript" style="font-size:10px">使用合作网站账号登录名鞋库：</div>
+                                                            <div class="box5"></div>
+                                                            <div class="fl clfix" style="width:235px;display: flex;margin: 10px">
+                                                                <div class="login-IconList"><a href="javascript:void(0);"
+                                                                        onclick="openWind('https://api.weibo.com/oauth2/authorize?client_id=4183477618&amp;redirect_uri=http%3A%2F%2Fwww.s.cn%2Findex.php%3Faction_sina-response.html&amp;response_type=code');return false;"
+                                                                        id="union_login_sina"><img src="static/images/sina_login_btn.png"></a></div>
+                                                                <div class="login-IconList"><a href="http://graph.renren.com/oauth/authorize?client_id=171706&amp;response_type=code&amp;scope=publish_feed&amp;redirect_uri=http://www.s.cn/index.php?action_openid_rr-response.html&amp;x_renew=true"
+                                                                        id="union_login_rr"><img src="static/images/rr_login.png"></a></div>
+                                                            </div>
+                                                            <div class="login-IconList"><a href="javascript:$('alipay').submit();"><img
+                                                                        src="static/images/taobao_login_btn.png"></a></div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+    <script>
+        function login() {
+            var username = document.getElementById('username');
+            var password = document.getElementById('password');
+            var ver_code = document.getElementById('ver_code');
+            $.ajax({
+                type: 'POST',
+                url: 'static/php/denglu.php',
+                data: {
+                    username: username.value,
+                    password: password.value,
+                    ver_code: ver_code.value
+                },
+                dataType: 'json',
+                success: function (data) {
+                    if (data.status != "登陆成功！") {
+                        alert(data.status);
+                    } else {
+                        alert(data.status);
+                    }
+                }
+            });
+            return false;
+        }
+
+
+    </script>
+    <div id="footer_wrap " style="border-top:2px solid #CE3C3B;background:none">
+        <div class="footer content " style="margin-top: 30px;background: #fff; ">
+            <a href="# ">关于我们 |</a>
+            <a href="# ">关于我们 |</a>
+            <a href="# ">关于我们 |</a>
+            <a href="# ">关于我们 |</a>
+            <a href="# ">关于我们</a>
+            <p>Copyright © 2004 - 2018 名鞋库 版权所有</p>
+            <p>违法和不良信息举报电话：4006561155</p>
+        </div>
+    </div>
+</body>
+
+</html>

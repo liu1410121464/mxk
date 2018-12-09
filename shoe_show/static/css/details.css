@@ -1,0 +1,88 @@
+#goods_wrap{
+   height: 544px; 
+}
+.content{
+    width: 1000px;
+    margin: 0 auto;
+}
+.goods{
+    height: 544px;
+    box-sizing: border-box;
+}
+.box {
+    box-sizing: border-box;
+}
+
+.show-image {
+    position: relative;
+    width: 447px;
+    font-size: 0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.show-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.filter {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.6);
+    cursor: move;
+    display: none;
+}
+
+.img-box {
+    padding: 10px 0 0 0;
+}
+
+.img-box>li {
+    display: inline-block;
+    border: 1px solid transparent;
+    width: 10%;
+    height: 10%; 
+}
+
+.img-box>li img {
+    max-width: 100%;
+    max-height: 100%;
+    /* display: flex; */
+}
+
+.img-box>li:hover,
+.img-box>li.active {
+    border: 1px solid #000;
+}
+
+.show-big-image {
+    position: absolute;
+    left: 720px;
+    top: 0;
+    width: 430px;
+    height: 430px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    display: none;
+}
+
+.show-big-image img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1080px;
+}
+.share{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 10px;
+    color: #ccc;
+}
+.share a{
+    background: url(static/images/share.png);
+}

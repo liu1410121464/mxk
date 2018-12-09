@@ -1,209 +1,209 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>用户注册</title>
-		<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="static/css/common.css" />
-		<link rel="stylesheet" type="text/css" href="static/css/zhuce.css" />
-		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<title>用户注册</title>
+	<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/zhuce.css" />
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
 
-	<body>
-		
-		<div id="top_wrap">
-			<div class="top content">
-				<div class="logo">
-					<h1>
-                		<a href="index.html">名鞋库</a>
-                	</h1>
-					<strong>专业精选&nbsp;足够喜欢</strong>
-				</div>
+<body>
+
+	<div id="top_wrap">
+		<div class="top content">
+			<div class="logo">
+				<h1>
+					<a href="index.html">名鞋库</a>
+				</h1>
+				<strong>专业精选&nbsp;足够喜欢</strong>
 			</div>
 		</div>
-		<script src="static/js/Ajax.js"></script>
-		<div class="AllWrapInside">
-			<div class="PassportWrap">
-				<div style="margin:0 auto;width:780px;line-height:30px;text-align:right;padding-right:10px" id="fanhui">
-					<a href="index.html">返回首页</a>
-				</div>
-				<form action="static/php/data.php" id="signup" class="signup" autocomplete="on" onsubmit="">
-					<div class="RegisterWrap" style="margin:0 auto;width:780px;">
-						<div class="form" style="padding:0;border:1px solid #efefef;border-radius:2px;box-shadow:0 0 8px #E5E5E5">
-							<div style="font-size:16px;font-family:microsoft yahei;color:#888;background:#f8f8f8;padding:4px 10px;border-bottom:1px solid #efefef;text-shadow:1px 1px #fff;font-weight:700;">
-								名鞋库用户注册
-							</div>
-							<table border="0" cellspacing="0" cellpadding="0" style="background:url(static/images/signup.jpg) no-repeat center bottom;width:780px;">
-								<tbody>
-									<tr>
-										<td width="65%">
-											<div style="padding:40px 0 80px 80px">
-												<table width="100%" border="0" cellspacing="0" cellpadding="0">
-													<tbody>
-														<tr>
-															<th>用户名: </th>
-															<td>
-																<input type="text" class="form-control" id="username" name="username" placeholder="用户名" maxlength="50px" data-error="需要输入6-13位的字母或者下划线" style="width:220px;padding:3px 5px;color:#aaa;">
-																<p class="" style="width:220px"></p>
-															</td>
-														</tr>
-														<tr>
-															<th style="padding-top:15px ">密码：</th>
-															<td style="padding-top:15px ">
-																<input type="password" class="form-control" id="password" name="password" data-error="密码格式不正确" style="width:220px;padding:3px 5px">
-																<p class="" style="width:220px"></p>
-															</td>
-														</tr>
-														<tr>
-															<th style="padding-top:15px ">确认密码：</th>
-															<td style="padding-top:15px ">
-																<input type="password" class="form-control" name="repassword" id="repassword" data-error="两次密码输入不一致" style="width:220px;padding:3px 5px ">
-																<p class="" style="width:220px"></p>
-															</td>
-														</tr>
-														<tr>
-															<th style="padding-top:15px">验证码：</th>
-															<td>
-																<input autocomplete="off " class="x-input " style="width:65px " size="8 " type="text " required="true " name="imgcode" id="iptsingup " vtype="digits ">
-																<span class="verifyCode ">
-																	<img src="//www.s.cn/passport-s-verifyCode.html?1543490258759 " border="1 " codesrc="//www.s.cn/passport-s-verifyCode.html ">
-																	<a href="javascript:void(0) " style="color:#666 ">换个图片</a>
-																</span>
-															</td>
-														</tr>
-														<tr>
-															<th></th>
-															<td style="padding-top:10px ">
-																<button class="actbtn cart-btn-next06 " name="submit" id="fast_reg_reg " style="display:inline-block;width:91px;height:32px;line-height:30px;text-align:center;color:#e66;font-size:14px;font-weight:700;margin-top:10px;background:url(static/images/loginbg.png); no-repeat;">注册新用户</button>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</td>
-										<td width="35% " style="text-align:center; ">
-											<div style="border-left:1px dashed #ccc;height:300px ">
-												<br><br><br><br> <b>已经有名鞋库账号？</b>
-												<div class="box10 "></div>
-												<a href="/passport-login.htm " class="returnlogin " id="fast_reg_login " style="display:inline-block;width:91px;height:32px;line-height:30px;text-align:center;color:#c66;font-size:14px;font-weight:700;margin-top:10px;background:url(static/images/loginbg.png); no-repeat; ">现在登录</a>
-												<div style="padding:40px 0 0 0; text-align:center ">
-													<img src="//images.s.cn/images/css/singupmy.png ">
-												</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+	</div>
+	<script src="static/js/Ajax.js"></script>
+	<div class="AllWrapInside">
+		<div class="PassportWrap">
+			<div style="margin:0 auto;width:780px;line-height:30px;text-align:right;padding-right:10px" id="fanhui">
+				<a href="index.html">返回首页</a>
+			</div>
+			<form action="static/php/data.php" id="signup" class="signup" autocomplete="on" onsubmit="">
+				<div class="RegisterWrap" style="margin:0 auto;width:780px;">
+					<div class="form" style="padding:0;border:1px solid #efefef;border-radius:2px;box-shadow:0 0 8px #E5E5E5">
+						<div style="font-size:16px;font-family:microsoft yahei;color:#888;background:#f8f8f8;padding:4px 10px;border-bottom:1px solid #efefef;text-shadow:1px 1px #fff;font-weight:700;">
+							名鞋库用户注册
 						</div>
+						<table border="0" cellspacing="0" cellpadding="0" style="background:url(static/images/signup.jpg) no-repeat center bottom;width:780px;">
+							<tbody>
+								<tr>
+									<td width="65%">
+										<div style="padding:40px 0 80px 80px">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tbody>
+													<tr>
+														<th>用户名: </th>
+														<td>
+															<input type="text" class="form-control" id="username" name="username" placeholder="用户名" value=""
+															 maxlength="50px" data-error="需要输入6-13位的字母或者下划线" style="width:220px;padding:3px 5px;color:#aaa;">
+															<p class="" style="width:220px"></p>
+														</td>
+													</tr>
+													<tr>
+														<th style="padding-top:15px ">密码：</th>
+														<td style="padding-top:15px ">
+															<input type="password" class="form-control" id="password" name="password" placeholder="密码" data-error="密码格式不正确"
+															 style="width:220px;padding:3px 5px">
+															<p class="" style="width:220px"></p>
+														</td>
+													</tr>
+													<tr>
+														<th style="padding-top:15px ">确认密码：</th>
+														<td style="padding-top:15px ">
+															<input type="password" class="form-control" name="repassword" id="repassword" placeholder="确认密码"
+															 data-error="两次密码输入不一致" style="width:220px;padding:3px 5px ">
+															<p class="" style="width:220px"></p>
+														</td>
+													</tr>
+													<tr>
+														<th style="padding-top:15px">验证码：</th>
+														<td>
+															<input type="text" name="ver_code" id="ver_code" maxLength="4" style="width:65px" />
+															<img id="code_img" 　border="1" src="static/php/code.php echo rand();?>" width="80" height="35" />
+															<a href="javascript:void(0)" onclick="document.getElementById('code_img').src='static/php/code.php?r='+Math.random()"><span>看不清？换一个！</span></a>
+														</td>
+													</tr>
+													<tr>
+														<th></th>
+														<td style="padding-top:10px ">
+															<button name="submit" type="submit" style="display:inline-block;width:91px;height:32px;line-height:10px;text-align:center;color:#e66;font-size:14px;font-weight:700;margin-top:10px;background:url(static/images/loginbg.png); no-repeat;">注册新用户</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</td>
+									<td width="35% " style="text-align:center">
+										<div style="border-left:1px dashed #ccc;height:300px ">
+											<br><br><br><br> <b>已经有名鞋库账号？</b>
+											<div class="box10 "></div>
+											<a href="denglu.html" class="returnlogin " id="fast_reg_login " style="display:inline-block;width:91px;height:32px;line-height:30px;text-align:center;color:#c66;font-size:14px;font-weight:700;margin-top:10px;background:url(static/images/loginbg.png); no-repeat; ">现在登录</a>
+											<div style="padding:40px 0 0 0; text-align:center ">
+												<img src="static/images/singupmy.png">
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-				</form>
-			</div>
+				</div>
+			</form>
 		</div>
+	</div>
 
-		<script>
-			var checkInput = {
-				username(str) {
-					var reg = /^\w{6,14}$/;
-					return reg.test(str);
-				},
-				password(str) {
-					var reg = /^\w{6,11}$/;
-					return reg.test(str);
-				}
+	<script>
+		var checkInput = {
+			username(str) {
+				var reg = /^\w{6,14}$/;
+				return reg.test(str);
+			},
+			password(str) {
+				var reg = /^\w{6,11}$/;
+				return reg.test(str);
 			}
-			var register = (function() {
-				return {
-					init(ele) {
-						this.$el = document.querySelector(ele);
-						this.$inputAll = this.$el.querySelectorAll('input');
-						this.event();
-					},
-					event() {
-						var _this = this;
-						for(let i = 0; i < this.$inputAll.length-1; i++) {
-							this.$inputAll[i].onblur = function() {
-								var $p = this.nextElementSibling;
-								if(this.value == '') {
-									$p.className = 'text-danger bg-danger';
-									$p.innerHTML = '内容不可以为空';
-								} else {
-									// 调用对应的方法, 把文本值传入
-									var bool = checkInput[this.name](this.value);
-									//                              console.log(this);
-									if(bool) {
-										// 验证成功
-										$p.className = 'text-success bg-success';
-										$p.innerHTML = '验证成功';
-									} else {
-										// 验证失败
-										$p.className = 'text-danger bg-danger';
-										$p.innerHTML = this.getAttribute('data-error');
-									}
-								}
-							}
-						}
+		}
+		var register = (function () {
 
-						this.$el['username'].addEventListener('blur', function() {
-							var _this = this;
-							var val = this.value;
-							var $p = this.nextElementSibling;
-							if($p.className == 'text-success bg-success') {
-								sentAjax('static/php/ajax.php', {
-									//                      		method:'POST',
-									data: {
-										username: val
-									},
-									success(res) {
-										if(res == '1') {
-											$p.className = 'text-danger bg-danger';
-											$p.innerHTML = '用户名已存在';
-										}
-									}
-								})
-							}
-						})
+			return {
+				init(ele) {
+					this.$el = document.querySelector(ele);
+					this.$inputAll = this.$el.querySelectorAll('input');
+					this.event();
+				},
+				event() {
+					var _this = this;
+					for (let i = 0; i < this.$inputAll.length - 1; i++) {
+						this.$inputAll[i].onblur = function () {
 
-						this.$el['password'].addEventListener('blur', function() {
-							_this.$el['repassword'].onblur();
-						})
-						this.$el['repassword'].onblur = function() {
 							var $p = this.nextElementSibling;
-							if(this.value === _this.$el['password'].value) {
-								$p.className = 'text-success bg-success';
-								$p.innerHTML = '验证成功';
-							} else {
+							if (this.value == '') {
 								$p.className = 'text-danger bg-danger';
-								$p.innerHTML = this.getAttribute('data-error');
-							}
-						}
-
-						this.$el['submit'].onclick = function() {
-							var $pAll = _this.$el.querySelectorAll('p');
-							for(let i = 0; i < $pAll.length-1; i++) {
-								if($pAll[i].className.indexOf('text-danger') == -1) {
-									$pAll[i].previousElementSibling.focus();
-									return;
+								$p.innerHTML = '内容不可以为空';
+							} else {
+								var bool = checkInput[this.name](this.value);
+								console.log(this);
+								if (bool) {
+									$p.className = 'text-success bg-success';
+									$p.innerHTML = '验证成功';
+								} else {
+									$p.className = 'text-danger bg-danger';
+									$p.innerHTML = this.getAttribute('data-error');
 								}
 							}
-							alert('注册失败');
 						}
 					}
+
+					this.$el['username'].addEventListener('blur', function () {
+						var _this = this;
+						var val = this.value;
+						var $p = this.nextElementSibling;
+						if ($p.className == 'text-success bg-success') {
+							sentAjax('static/php/ajax.php?id', {
+								//                      		method:'POST',
+								data: {
+									username: val
+								},
+								success(res) {
+									if (res == '1') {
+										$p.className = 'text-danger bg-danger';
+										$p.innerHTML = '用户名已存在';
+									}
+								}
+							})
+						}
+					})
+
+					this.$el['password'].addEventListener('blur', function () {
+						_this.$el['repassword'].onblur();
+					})
+					this.$el['repassword'].onblur = function () {
+						var $p = this.nextElementSibling;
+						if (this.value === _this.$el['password'].value) {
+							$p.className = 'text-success bg-success';
+							$p.innerHTML = '验证成功';
+						} else {
+							$p.className = 'text-danger bg-danger';
+							$p.innerHTML = this.getAttribute('data-error');
+						}
+					}
+
+					this.$el['submit'].onclick = function () {
+						var $pAll = _this.$el.querySelectorAll('p');
+						for (let i = 0; i < $pAll.length - 1; i++) {
+							if ($pAll[i].className.indexOf('text-success') == -1) {
+								$pAll[i].previousElementSibling.focus();
+								return false;
+							}
+						}
+						alert('注册成功');
+					}
 				}
-			}())
-			register.init('#signup');
-		</script>
-		<div id="footer_wrap " style="background: #fff; ">
-			<div class="footer content " style="margin-top: 30px;background: #fff; ">
-				<a href="# ">关于我们 |</a>
-				<a href="# ">关于我们 |</a>
-				<a href="# ">关于我们 |</a>
-				<a href="# ">关于我们 |</a>
-				<a href="# ">关于我们</a>
-				<p>Copyright © 2004 - 2018 名鞋库 版权所有</p>
-				<p>违法和不良信息举报电话：4006561155</p>
-			</div>
+			}
+		}())
+		register.init('#signup');
+	</script>
+	<div id="footer_wrap " style="border-top:2px solid #CE3C3B;background:none">
+		<div class="footer content " style="margin-top: 30px;background: #fff; ">
+			<a href="# ">关于我们 |</a>
+			<a href="# ">关于我们 |</a>
+			<a href="# ">关于我们 |</a>
+			<a href="# ">关于我们 |</a>
+			<a href="# ">关于我们</a>
+			<p>Copyright © 2004 - 2018 名鞋库 版权所有</p>
+			<p>违法和不良信息举报电话：4006561155</p>
 		</div>
-	</body>
+	</div>
+</body>
 
 </html>
