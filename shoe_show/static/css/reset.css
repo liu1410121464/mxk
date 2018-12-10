@@ -10,6 +10,9 @@ body,html{
 li{
 	list-style:none;	
 }
+nobr{
+	white-space: nowrap;
+}
 a{
 	text-decoration:none;
 	color:#696969;

@@ -105,6 +105,26 @@
 .share .qq-z{
     background-position: 0 -85px;
 }
+.good-spec a{
+    display: block;
+    float: left;
+}
+.good-spec a img{
+    padding: 1px;
+}
+.good-spec li{
+    float: left;
+    margin: 3px;
+}
+.hightline ul{
+    margin-right: 30px;
+}
+.hightbox table th,.hightbox{
+    padding: 3px 0;
+}
+.hightbox table th{
+    width: 75px;
+}
 .goodnamewrap{
     width: 100%;
     height: 54px;
@@ -192,4 +212,109 @@
     color: #fe6464;
     float: left;
     white-space: nowrap;
+}
+.hightline{
+    margin-top: 5px;
+}
+.hightbox{
+    background: #f5f5f5;
+    padding: 7px 2px;
+}
+.selectbox span.select{
+    border: 2px solid #f90; 
+}
+.selectbox a span{
+    padding: 4px 6px;
+    line-height: 15px;
+    border: 1px solid #ccc;
+    word-break: break-all;
+}
+.spec-item ul li img{
+    width: 28px;
+    height: 28px;
+    border: 2px solid #f90;
+}
+.buyinfo{
+    line-height: 2em;
+}
+.buyinfo .numadjust{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    overflow: hidden;
+    background: url(../images/pro_detial_icon1.png) no-repeat;
+    cursor: pointer;
+    margin: 6px 3px;
+    float: left;
+}
+.buyinfo .derease{
+    background-position: 0 -301px;
+}
+.buyinfo .increase{
+    background-position: -16px -301px;
+}
+.buyinfo input{
+    border: 1px solid #e0e0e0;
+    height: 16px;
+    width: 26px;
+    line-height: 16px;
+    text-align: center;
+    margin: 3px;
+    float: left;
+    color: #555;
+    font-size: 12px;
+}
+.buyinfo a{
+    background: url(../images/pro_detial_icon1.png) no-repeat;
+    display:block;
+    height: 25px;
+    width: 95px;
+    background-position: 0 -207px; 
+    float: right;
+}
+.btnbar{
+  height: 58px;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  padding-top:5px; 
+  border-top: 1px solid #ccc;
+  margin-top: 12px;
+}
+.btnbar .buynums{
+    padding: 0 3px;
+    color: #c00;
+    font-size: 700;
+    font-family: '宋体'；
+}
+.btnbar .buycm{
+    padding: 0 3px;
+    color: #c00;
+    font-size: 700;
+    font-family: '宋体'；
+}
+.btnbar .btnbox{
+    width: 171px;
+    height:46px;
+    text-align: right;
+    float: left;
+    vertical-align: bottom;
+}
+.btn-buy{
+    width: 171px;
+    height: 44px;
+    background: url(../images/pro_detial_icon1.png) no-repeat -3px -126px;
+    float: right;
+}
+.fast-buy{
+    float: left;
+    width: 137px;
+    height: 44px;
+    background: url(../images/pro_detial_icon1.png) no-repeat -3px -449px;
+}
+.actbtn{
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
 }
