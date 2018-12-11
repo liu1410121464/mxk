@@ -88,25 +88,17 @@
                                                         </th>
                                                         <td>
                                                             <ul class="selectbox">
-                                                                <li>
-                                                                    <a href="">
-                                                                        <span class="select">39</span>
-                                                                    </a>
+                                                                <li class="select">
+                                                                    <span>39</span>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="">
-                                                                        <span>39.5</span>
-                                                                    </a>
+                                                                    <span>39.5</span>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="">
-                                                                        <span>40</span>
-                                                                    </a>
+                                                                    <span>40</span>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="">
-                                                                        <span>41</span>
-                                                                    </a>
+                                                                    <span>41</span>
                                                                 </li>
                                                             </ul>
                                                         </td>
@@ -139,7 +131,8 @@
                                                             </th>
                                                             <td>
                                                                 <span class="numadjust derease"></span>
-                                                                <input type="text" name="num" size="5" value='1'>
+                                                                <input class="inp" type="text" name="num" size="5"
+                                                                    value='1'>
                                                                 <span class="numadjust increase"></span>
                                                                 <a href=""></a>
                                                             </td>
@@ -160,6 +153,24 @@
                                             <input type="botton" name="" class="actbtn fast-buy" value="立即购买" style="cursor:pointer">
                                         </div>
                                     </div>
+                                    <div class="baozheng server">
+                                        <i>&nbsp;名鞋库客服：</i>
+                                        <span class="server_line">销售:</span>
+                                        <span>
+                                            <img style="cursor:pointer" src="static/images/10_online.gif" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="baozheng">
+                                        <i>名鞋库保障</i>&nbsp;
+                                        <img src="static/images/zheng.png" alt="">
+                                        正品保障
+                                        &nbsp;&nbsp;&nbsp;
+                                        <img src="static/images/tui.png" alt="">
+                                        自由退货
+                                        &nbsp;&nbsp;&nbsp;
+                                        <img src="static/images/mian.png" alt="">
+                                        全场满399免邮
+                                    </div>
                                 </div>
                             </div>
                         </td>
@@ -168,6 +179,42 @@
             </table>
         </div>
     </div>
+    <script>
+        $('.selectbox').on('click', 'li', function () {
+            $(this).addClass('select').siblings().removeClass('select');
+        })
+        var count = (function () {
+            return {
+                init() {
+                    this.event();
+                },
+                event() {
+                    var _this = this;
+                    var count = 1;
+                    $('.increase').click(function () {
+                        count++;
+                        console.log(10);
+                        _this.set(this.parentNode, count, 'input');
+                    })
+                    $('.derease').click(function () {
+                        count--;
+                        if (count-- <= 1) {
+                            count = 1;
+                        }
+                        _this.set(this.parentNode, count, 'input');
+
+                    })
+                },
+                set(ele, val, child) {
+                    if (child) {
+                        ele.querySelector(child).value = val;
+                    }
+                }
+
+            }
+        }())
+        count.init();
+    </script>
 </body>
 
 </html>

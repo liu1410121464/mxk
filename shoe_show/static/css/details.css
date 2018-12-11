@@ -220,14 +220,14 @@
     background: #f5f5f5;
     padding: 7px 2px;
 }
-.selectbox span.select{
-    border: 2px solid #f90; 
-}
-.selectbox a span{
+.selectbox li{
     padding: 4px 6px;
     line-height: 15px;
     border: 1px solid #ccc;
     word-break: break-all;
+}
+.selectbox li.select{
+    border: 2px solid #f90; 
 }
 .spec-item ul li img{
     width: 28px;
@@ -317,4 +317,22 @@
     border: none;
     cursor: pointer;
     display: inline-block;
+}
+.baozheng{
+    border-top:1px solid #ccc; 
+    clear: both;
+    color: #777;
+    font-family: '宋体';
+    padding:10px 0;
+}
+.baozheng img{
+    vertical-align: middle;
+}
+.server{
+    padding-top:5px;
+    background: 0; 
+     
+}
+.server i{
+    color: #999;
 }
