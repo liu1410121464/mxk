@@ -14,6 +14,8 @@
 
 <body>
 	<script src="static/js/swiper.min.js"></script>
+	<script src="static/js/ajax0.1.0.js"></script>
+
 	<div class="header"></div>
 	<div id="banner" class="swiper-container container">
 		<div class="swiper-wrapper ">
@@ -27,23 +29,15 @@
 	</div>
 	<div class="male_shop">
 		<a href="">
-			<img src="static/images/json/d77bfe9d14fc92ab.jpg" alt="">
+			<img style="width:100%" src="static/images/json/d77bfe9d14fc92ab.jpg" alt="">
 		</a>
 	</div>
 	<div class="shop_list container">
-
-		<dl>
-			<dt>
-				<a href="">
-					<img src="static/images/json/794615879e7a57fb_210.jpg" alt="">
-					<div class="mask">
-						<div class="sp">569</div>
-					</div>
-				</a>
-			</dt>
-			<dd></dd>
-		</dl>
+		<ul></ul>
 	</div>
+	<script>
+		shop.init();
+	</script>
 	<div class="footer"></div>
 	<script>
 		var mySwiper = new Swiper('.swiper-container', {
@@ -62,6 +56,7 @@
 			},
 
 		})
+
 	</script>
 	<script src="static/js/jquery.js"></script>
 	<script>
@@ -70,6 +65,7 @@
 			$(".footer").load("static/common/footer.html");
 		});
 	</script>
+	<script src="static/js/shop.js"></script>
 </body>
 
 </html>

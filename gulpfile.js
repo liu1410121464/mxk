@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 var pngquant = require('imagemin-pngquant');
 
 gulp.task('minihtml', function () {
-    gulp.src('shoe_show/static/*.html')
+    gulp.src('shoe_show/*.html')
         .pipe(gulp.dest('dist'))
 })
 gulp.task('minicss', function () {

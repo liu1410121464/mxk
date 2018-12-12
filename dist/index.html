@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>名鞋库</title>
+	<link rel="stylesheet" type="text/css" href="static/css/iconfont.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/header.css">
+	<link rel="stylesheet" type="text/css" href="static/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="static/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/index.css" />
+</head>
+
+<body>
+	<div class="header"></div>
+	<div id="banner" class="swiper-container container">
+		<div class="swiper-wrapper ">
+			<div class="swiper-slide"><img src="static/images/jd1.jpg" /></div>
+			<div class="swiper-slide"><img src="static/images/jd2.jpg" /></div>
+			<div class="swiper-slide"><img src="static/images/jd3.jpg" /></div>
+			<div class="swiper-slide"><img src="static/images/jd4.jpg" /></div>
+		</div>
+		<!-- 如果需要分页器 -->
+		<div class="swiper-pagination"></div>
+	</div>
+	<div class="male_shop">
+		<a href="">
+			<img style="width:100%" src="static/images/json/d77bfe9d14fc92ab.jpg" alt="">
+		</a>
+	</div>
+	<div class="shop_list container">
+		<ul>
+			<!-- <li>
+				<a href=''><img class='img' src='static/images/json/f67ba292108915bf_210.jpg'></a>
+				<a href='' class='descride'>NIKE耐克男鞋跑步鞋2018新款ZOOM系列减震透气舒适运动鞋AA7406</a>
+				<a href='' class='price'>539</a>
+				<button class='buy'>立即抢购</button>
+			</li> -->
+		</ul>
+	</div>
+	<div class="footer"></div>
+	<script src="static/js/swiper.min.js"></script>
+	<script src="static/js/ajax0.1.0.js"></script>
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/shop.js"></script>
+
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			loop: true, // 循环模式选项
+			autoplay: true,
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: 'true',
+			},
+
+			// 如果需要前进后退按钮
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+		})
+
+	</script>
+	<script>
+		shop.init();
+	</script>
+	<script>
+		$(function () {
+			$(".header").load("static/common/header.html");
+			$(".footer").load("static/common/footer.html");
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+#top_wrap {
+	height: 93px;
+	background: #fff;
+}
+
+.content {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.top {
+	height: 93px;
+	background: #fff;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+
+.logo {
+	float: left;
+	width: 422px;
+}
+
+.logo h1 {
+	float: left;
+	margin-top: 16px;
+}
+
+.logo h1 a {
+	display: block;
+	height: 53px;
+	width: 261px;
+	background: url(../images/images/default_icon_bg_02.jpg) no-repeat;
+	text-indent: -9999px;
+}
+
+.logo strong {
+	float: left;
+	margin-top: 41px;
+	margin-left: 16px;
+	font-size: 17px;
+	color: #6d6d6d;
+}
+.RegisterWrap .form table th {
+	text-align: right;
+	color: #666;
+	font-size:14px ;
+}
