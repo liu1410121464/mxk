@@ -52,13 +52,14 @@
         <div class="container">
             <div class="logo-left">
                 <h1>名鞋库</h1>
-                <a href=""> </a>
+                <a href="index.html"> </a>
             </div>
             <div class="logo-center">
                 <dl>
                     <dt>
                         <form method="get" action="#">
-                            <input type="text" name="" placeholder="朗迪维">
+                            <input type="text" name="" id="inp" placeholder="朗迪维">
+                            <ul id="ul" style="position: absolute;top:80px;background: #fff;z-index: 10;cursor: pointer;"></ul>
                             <button>搜索</button>
                         </form>
 
@@ -78,7 +79,30 @@
             </div>
         </div>
     </div>
-
+    <script src="static/js/jsonp.js"></script>
+    <script>
+        function fn(res) {
+            ul.innerHTML = '';
+            var inp = document.getElementById('inp');
+            console.log(res.s);
+            var data = res.s;
+            for (var i = 0; i < data.length; i++) {
+                var $li = document.createElement('li');
+                var $a = document.createElement('a');
+                $a.href = 'details.html';
+                $a.innerHTML = data[i];
+                $li.appendChild($a);
+                ul.appendChild($li);
+            }
+        }
+        inp.oninput = function () {
+            var val = this.value;
+            sendJsonp('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su', {
+                wd: val,
+                cb: "fn"
+            })
+        }
+    </script>
 
     <!-- nav区域 -->
     <div class="nav">

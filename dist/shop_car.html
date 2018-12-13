@@ -7,9 +7,184 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<link rel="stylesheet" href="static/css/base.css">
+<link rel="stylesheet" href="static/css/shop_car.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+
 
 <body>
+    <div id="enter">
+        <div class="header">
+            <div class="header-t">
+                <div class="container">
+                    <p>
+                        <span>欢迎,</span>
+                        <a href="">用户名！</a>
+                        <a href="">[退出]</a>
+                    </p>
+                    <ul class="menu-lever">
 
+                        <li>
+                            <span></span>
+                            <a href="">帮助中心</a>
+                            <p>
+                                <a href="">售后中心</a>
+                            </p>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="">我的名鞋库</a>
+                            <div>
+                                <ul>
+                                    <li><a href="">我的订单</a></li>
+                                    <li><a href="">优惠劵</a></li>
+                                    <li><a href="">收货地址</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="">我的积分</a></li>
+                                    <li><a href="">商品收藏</a></li>
+                                    <li><a href="">密码管理</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header-logo">
+                    <div class="logo-l">
+                        <h1>名鞋库</h1>
+                        <a href=""></a>
+                    </div>
+                    <ul class="logo-r">
+                        <div>
+                            <span></span>
+                            <p>
+                                <span></span>
+                                <a href="">名鞋库客服</a>
+                            </p>
+                            <p>
+                                <a href="">浏览记录</a>
+                                <span></span>
+                            </p>
+                        </div>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <img src="static/images/index-dr/cartnav-step01.jpg" alt="">
+                <div class="car_cat" style="position:relative;line-height: 30px;color: #555;font-size: 14px;font-weight: 700;clear: both;margin-bottom: 5px;">我的购物车</div>
+                <div class="car_head" style="font-weight:normal">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>商品信息</th>
+                                <th>销售价格</th>
+                                <th>数量</th>
+                                <th>小计</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                            <!-- <tr>
+                                <td>
+                                    <img src="static/images/08_small.jpg" alt="" />酷黑，棒棒棒棒
+                                </td>
+                                <td>
+                                    ￥<span>111</span>
+                                </td>
+                                <td>
+                                    <span class="numadjust derease"></span>
+                                    <input class="inp" type="text" name="num" size="5" value='1'>
+                                    <span class="numadjust increase"></span>
+                                </td>
+                                <td>
+                                    ￥<span>111</span>
+                                </td>
+                                <td>
+                                    <button class="del">删除</button>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- footer区域 -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-1">
+                    <ul>
+                        <li><a href="">关于名鞋库</a></li>
+                        <li><a href="">联系名鞋库</a></li>
+                        <li><a href="">人才招聘</a></li>
+                        <li><a href="">免责条款</a></li>
+                        <li><a href="">法律声明</a></li>
+                        <li><a href="">客服中心</a></li>
+                        <li><a href="">全部分类</a></li>
+                        <li><a href="">友情链接</a></li>
+                        <li><a href="">鞋码对照表</a></li>
+                        <li><a href="">问答中心</a></li>
+                    </ul>
+                    <ul>
+                        <li>Copyright © 2008-2014 <span>s.cn</span> <a href="">名鞋库</a> All Rights Reserved.</li>
+                        <li><a href="">闽ICP备08106896号</a></li>
+                        <li>经营许可证闽B2-20110061 </li>
+                        <li><img src="static/images/MXK/20160617.png" alt=""><a href="">闽公网安备 35020602000166号</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/shop_car.js"></script>
+    <script src="static/js/ajax0.1.0.js"></script>
+    <script src="static/js/jquery.js"></script>
+    <script>
+        var count = (function () {
+            return {
+                init() {
+                    this.event();
+                },
+                event() {
+                    var _this = this;
+                    var count = 1;
+                    $('.increase').click(function () {
+                        count++;
+                        _this.set(this.parentNode, count, 'input');
+                    })
+                    $('.derease').click(function () {
+                        count--;
+                        if (count <= 1) {
+                            count = 1;
+                        }
+                        _this.set(this.parentNode, count, 'input');
+
+                    })
+                },
+                set(ele, val, child) {
+                    if (child) {
+                        ele.querySelector(child).value = val;
+                    } else {
+                        ele.innerHTML = val;
+                    }
+                }
+
+            }
+        }())
+        count.init();
+    </script>
 </body>
 
 </html>

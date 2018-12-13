@@ -52,7 +52,7 @@
         <div class="container">
             <div class="logo-left">
                 <h1>名鞋库</h1>
-                <a href=""> </a>
+                <a href="index.html"> </a>
             </div>
             <div class="logo-center">
                 <dl>
@@ -89,6 +89,7 @@
             for (var i = 0; i < data.length; i++) {
                 var $li = document.createElement('li');
                 var $a = document.createElement('a');
+                $a.href = 'details.html';
                 $a.innerHTML = data[i];
                 $li.appendChild($a);
                 ul.appendChild($li);

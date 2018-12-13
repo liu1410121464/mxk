@@ -18,7 +18,7 @@
     width: 430px;
     font-size: 0;
     border: 1px solid #ccc;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .show-image img {
@@ -64,7 +64,7 @@
     height: 430px;
     overflow: hidden;
     border: 1px solid #eee;
-    display: block;
+    display: none;
 }
 
 .show-big-image img {
@@ -223,6 +223,7 @@
     line-height: 15px;
     border: 1px solid #ccc;
     word-break: break-all;
+    cursor: pointer;
 }
 .selectbox li.select{
     border: 2px solid #f90; 

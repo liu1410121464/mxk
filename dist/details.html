@@ -137,7 +137,7 @@
                                                             <td>
                                                                 <span class="numadjust derease"></span>
                                                                 <input class="inp" type="text" name="num" size="5"
-                                                                    value='1'>
+                                                                    value="1">
                                                                 <span class="numadjust increase"></span>
                                                                 <a href=""></a>
                                                             </td>
@@ -185,6 +185,11 @@
         </div>
     </div>
     <div class="footer"></div>
+    <script src="static/js/ajax0.1.0.js"></script>
+    <script src="static/js/details_shop.js"></script>
+    <script>
+        shop.init();
+    </script>
     <script>
         $(function () {
             $(".header").load("static/common/header.html");
@@ -219,6 +224,8 @@
                 set(ele, val, child) {
                     if (child) {
                         ele.querySelector(child).value = val;
+                    } else {
+                        ele.innerHTML = val;
                     }
                 }
 

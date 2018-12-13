@@ -10,12 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="static/css/header.css">
 	<link rel="stylesheet" type="text/css" href="static/css/footer.css">
 	<link rel="stylesheet" type="text/css" href="static/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/index.css" />
 </head>
 
 <body>
-	<script src="static/js/swiper.min.js"></script>
-	<script src="static/js/ajax0.1.0.js"></script>
-
 	<div class="header"></div>
 	<div id="banner" class="swiper-container container">
 		<div class="swiper-wrapper ">
@@ -33,12 +31,21 @@
 		</a>
 	</div>
 	<div class="shop_list container">
-		<ul></ul>
+		<ul>
+			<!-- <li>
+				<a href=''><img class='img' src='static/images/json/f67ba292108915bf_210.jpg'></a>
+				<a href='' class='descride'>NIKE耐克男鞋跑步鞋2018新款ZOOM系列减震透气舒适运动鞋AA7406</a>
+				<a href='' class='price'>539</a>
+				<button class='buy'>立即抢购</button>
+			</li> -->
+		</ul>
 	</div>
-	<script>
-		shop.init();
-	</script>
 	<div class="footer"></div>
+	<script src="static/js/swiper.min.js"></script>
+	<script src="static/js/ajax0.1.0.js"></script>
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/shop.js"></script>
+
 	<script>
 		var mySwiper = new Swiper('.swiper-container', {
 			loop: true, // 循环模式选项
@@ -58,14 +65,15 @@
 		})
 
 	</script>
-	<script src="static/js/jquery.js"></script>
+	<script>
+		shop.init();
+	</script>
 	<script>
 		$(function () {
 			$(".header").load("static/common/header.html");
 			$(".footer").load("static/common/footer.html");
 		});
 	</script>
-	<script src="static/js/shop.js"></script>
 </body>
 
 </html>
