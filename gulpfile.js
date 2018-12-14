@@ -39,7 +39,7 @@ gulp.task('json', function () {
 })
 
 gulp.task('php', function () {
-    gulp.src('sshoe_show/**/**/*.php')
+    gulp.src('shoe_show/**/**/*.php')
         .pipe(gulp.dest('dist'))
 })
 gulp.task('minijs', function () {
