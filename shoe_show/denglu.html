@@ -26,7 +26,8 @@
     <script src="static/js/Ajax.js"></script>
     <script src="static/js/jquery.js"></script>
     <div class="AllWrapInside">
-        <form method="POST" onsubmit="" action="static/php/denglu.php" class="loginform" id="loginform">
+        <form method="POST" onsubmit="" action="http://localhost:3000/mxk/shoe_show/static/php/denglu.php" class="loginform"
+            id="loginform">
             <div class="RegisterWrap content" style="margin:0 auto">
                 <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
                     <tbody>
@@ -118,7 +119,7 @@
             var ver_code = document.getElementById('ver_code');
             $.ajax({
                 type: 'POST',
-                url: 'static/php/denglu.php',
+                url: 'http://localhost:3000/mxk/shoe_show/static/php/denglu.php',
                 data: {
                     username: username.value,
                     password: password.value,
