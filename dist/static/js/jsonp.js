@@ -1,18 +1,1 @@
-// jsonp只适用于get请求
-
-function sendJsonp(url, data) {
-    var $script = document.createElement('script');
-    var flag = url.indexOf('?') == -1 ? '?' : '&';
-    url += flag;
-
-    if(typeof data == "object") {
-        for(var i in data) {
-            url += `${i}=${data[i]}` + '&';
-        }
-    }
-    url += '_=' + Date.now();
-    $script.src = url;
-    document.body.appendChild($script);
-
-
-}
+"use strict";function _typeof(o){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(o){return typeof o}:function(o){return o&&"function"==typeof Symbol&&o.constructor===Symbol&&o!==Symbol.prototype?"symbol":typeof o})(o)}function sendJsonp(o,t){var n=document.createElement("script"),e=-1==o.indexOf("?")?"?":"&";if(o+=e,"object"==_typeof(t))for(var c in t)o+="".concat(c,"=").concat(t[c])+"&";o+="_="+Date.now(),n.src=o,document.body.appendChild(n)}

@@ -28,7 +28,7 @@
 			<div style="margin:0 auto;width:780px;line-height:30px;text-align:right;padding-right:10px" id="fanhui">
 				<a href="index.html">返回首页</a>
 			</div>
-			<form action="http://localhost:3000/mxk/shoe_show/static/php/data.php" id="signup" class="signup" autocomplete="on"
+			<form action="http://10.36.141.237:3000/mxk/shoe_show/static/php/data.php" id="signup" class="signup" autocomplete="on"
 			 onsubmit="">
 				<div class="RegisterWrap" style="margin:0 auto;width:780px;">
 					<div class="form" style="padding:0;border:1px solid #efefef;border-radius:2px;box-shadow:0 0 8px #E5E5E5">
@@ -150,7 +150,7 @@
 						var val = this.value;
 						var $p = this.nextElementSibling;
 						if ($p.className == 'text-success') {
-							sentAjax('http://localhost:3000/mxk/shoe_show/static/php/ajax.php', {
+							sentAjax('http://10.36.141.237:3000/mxk/shoe_show/static/php/ajax.php', {
 								//                      		method:'POST',
 								data: {
 									username: val

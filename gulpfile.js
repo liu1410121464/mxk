@@ -34,16 +34,16 @@ gulp.task('minicss', function () {
 });
 
 gulp.task('json', function () {
-    gulp.src('app/**/*.json')
+    gulp.src('shoe_show/**/**/*.json')
         .pipe(gulp.dest('dist'))
 })
 
 gulp.task('php', function () {
-    gulp.src('server/**/*.php')
+    gulp.src('sshoe_show/**/**/*.php')
         .pipe(gulp.dest('dist'))
 })
 gulp.task('minijs', function () {
-    gulp.src('app/**/*.js')
+    gulp.src('shoe_show/**/**/*.js')
         .pipe(babel({
             presets: ['@babel/env']
         }))
@@ -71,19 +71,19 @@ gulp.task('hebing', function () {//合并js
 });
 
 gulp.task('minihtml', function () {//压缩html
-    gulp.src('static/**/*.html')
+    gulp.src('shoe_show/**/*.html')
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('dist'));
 });
 
 gulp.task('miniimg', function () {//压缩图片
-    gulp.src(['static/**/*.jpg', 'static/**/*.png', 'static/**/*.gif'])
+    gulp.src(['shoe_show/**/**/*.jpg', 'shoe_show/**/**/*.png', 'shoe_show/**/**/*.gif'])
         .pipe(imagemin())
         .pipe(gulp.dest('dist'))
 });
 
 gulp.task('es6toes5', function () {//ES6转ES5
-    gulp.src('static/**/*.js')
+    gulp.src('shoe_show/**/**/*.js')
         .pipe(babel({
             presets: ['@babel/env']
         }))
@@ -114,29 +114,29 @@ gulp.src('./hello.txt')
     .pipe(gulp.dest('./dist'));
 
 gulp.task('minicss', function () {
-    gulp.src('static/**/*.css')
+    gulp.src('shoe_show/**/**/*.css')
         .pipe(cssmin())
         .pipe(gulp.dest('dist'));
 });
 
 gulp.task('sass', function () {
-    return gulp.src('static/**/*.scss')
+    return gulp.src('shoe_show/**/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', function () { //监听
-    gulp.watch('static/**/*.html', ['minihtml'])
-    gulp.watch('static/**/*.scss', ['sass'])
-    gulp.watch('static/**/*.css', ['minicss'])
-    gulp.watch('static/**/*.js', ['minijs'])
+    gulp.watch('shoe_show/*.html', ['minihtml'])
+    // gulp.watch('**/**/*.scss', ['sass'])
+    gulp.watch('shoe_show/**/**/*.css', ['minicss'])
+    gulp.watch('shoe_show/**/**/*.js', ['minijs'])
 })
 
 
 
 gulp.task('dev', function (callback) {
     runSequence(
-        'sass',//同步执行
+        // 'sass',//同步执行
         'json',
         'php',
         'miniimg',
